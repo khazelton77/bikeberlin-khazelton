@@ -1,39 +1,7 @@
 
-<<<<<<< HEAD
-
-<h1>Listing Products</h1>
-=======
 <h1>Listing Products</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Color</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= product.colour %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
->>>>>>> 565588a05b58326281edf31bb0930ea03a500af3
-
-
-<%= link_to 'New Product', new_product_path %>
 <div class="container-fluid">
   <div class="row">
     <%= @products.each do |product| %>
